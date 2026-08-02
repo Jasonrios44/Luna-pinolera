@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear cuenta — Luna Pinolera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-page">
+    <div class="auth-card">
+
+      <div class="marca">
+        <span class="luna-icono"></span>
+        <span class="marca-texto">Luna Pinolera</span>
+      </div>
+      <p class="subtitulo">Crea tu cuenta para comenzar tu seguimiento.</p>
+
+      <p class="error-msg" id="mensaje-error">Revisa los campos marcados.</p>
+
+      <form id="form-registro">
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="fecha_nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+
+        <div class="campo">
+          <label for="etapa">¿En qué etapa te encuentras?</label>
+          <select id="etapa" name="etapa" required>
+            <option value="">Selecciona una opción</option>
+            <option value="menstrual">Ciclo menstrual</option>
+            <option value="perimenopausia">Perimenopausia</option>
+            <option value="menopausia">Menopausia</option>
+            <option value="posmenopausia">Posmenopausia</option>
+          </select>
+        </div>
+
+        <div class="campo-doble">
+          <div class="campo">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="••••••••" required>
+          </div>
+          <div class="campo">
+            <label for="confirmar_contrasena">Confirmar</label>
+            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div class="checkbox-linea">
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto los términos de uso y el tratamiento de mis datos de salud.</label>
+        </div>
+
+        <button type="submit" class="btn btn-secundario">Crear cuenta</button>
+      </form>
+
+      <p class="enlace-alterno">
+        ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

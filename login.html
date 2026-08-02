@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar sesión — Luna Pinolera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-page">
+    <div class="auth-card">
+
+      <div class="luna-decorativa"></div>
+
+      <div class="marca">
+        <span class="marca-texto">Luna Pinolera</span>
+      </div>
+      <p class="subtitulo">Tu ciclo, tu etapa, tu ritmo.</p>
+
+      <p class="error-msg" id="mensaje-error">Correo o contraseña incorrectos.</p>
+
+      <form id="form-login">
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-primario">Iniciar sesión</button>
+      </form>
+
+      <p class="enlace-alterno">
+        ¿Todavía no tienes cuenta? <a href="register.html">Regístrate aquí</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

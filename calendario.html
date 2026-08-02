@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendario — Luna Pinolera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="marca">
+      <span class="luna-icono"></span>
+      <span class="marca-texto">Luna Pinolera</span>
+    </div>
+    <div class="perfil-icono" id="inicial-usuaria">U</div>
+  </nav>
+
+  <main class="contenido">
+
+    <div class="panel">
+      <h3>Configura tu ciclo</h3>
+
+      <div class="campo">
+        <label for="fecha-inicio">Fecha en que comenzó tu período</label>
+        <input type="date" id="fecha-inicio">
+      </div>
+
+      <div class="campo">
+        <label for="duracion-ciclo">Duración promedio del ciclo (días)</label>
+        <input type="number" id="duracion-ciclo" value="28" min="20" max="40">
+      </div>
+
+      <button id="btn-calcular" class="btn btn-primario">Calcular fases</button>
+    </div>
+
+    <div class="panel">
+      <div class="calendar-header">
+        <button id="btn-mes-anterior">&#8592;</button>
+        <h2 id="mes-actual">Mes</h2>
+        <button id="btn-mes-siguiente">&#8594;</button>
+      </div>
+
+      <div class="dias-semana">
+        <div>D</div><div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div>
+      </div>
+
+      <div class="dias-mes" id="dias-mes"></div>
+
+      <div class="leyenda">
+        <div class="leyenda-item"><div class="leyenda-color" style="background:var(--gold-deep);"></div> Menstrual</div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:var(--gold-light);"></div> Folicular</div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:var(--brown);"></div> Ovulación</div>
+        <div class="leyenda-item"><div class="leyenda-color" style="background:var(--green);"></div> Lútea</div>
+      </div>
+
+      <p id="info-fase"></p>
+    </div>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="home.html">
+      <span class="icono"></span>
+      Inicio
+    </a>
+    <a href="calendario.html" class="activo">
+      <span class="icono"></span>
+      Calendario
+    </a>
+    <a href="chat.html">
+      <span class="icono"></span>
+      Asistente
+    </a>
+    <a href="perfil.html">
+      <span class="icono"></span>
+      Perfil
+    </a>
+  </nav>
+
+  <script src="calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio — Luna Pinolera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="marca">
+      <span class="luna-icono"></span>
+      <span class="marca-texto">Luna Pinolera</span>
+    </div>
+    <div class="perfil-icono" id="inicial-usuaria">U</div>
+  </nav>
+
+  <main class="contenido">
+
+    <div class="saludo">
+      <h1 id="texto-saludo">Hola, María</h1>
+      <p id="texto-fecha">Hoy es un buen día para escuchar a tu cuerpo.</p>
+    </div>
+
+    <!-- Tarjeta de ciclo menstrual -->
+    <section class="tarjeta-ala ala-oro">
+      <p class="etiqueta">Ciclo menstrual</p>
+      <h2 id="fase-actual">Fase folicular</h2>
+      <p id="detalle-fase">Estás en el día 8 de tu ciclo. Tu energía suele subir en esta etapa.</p>
+    </section>
+
+    <!-- Tarjeta de menopausia (se muestra según la etapa de la usuaria) -->
+    <section class="tarjeta-ala ala-verde">
+      <p class="etiqueta">Bienestar en menopausia</p>
+      <h2>Síntomas de esta semana</h2>
+      <p>Aún no has registrado síntomas esta semana. Llevar el registro ayuda a identificar patrones.</p>
+    </section>
+
+    <div class="acciones-rapidas">
+      <a class="accion-card" href="calendario.html">
+        <span class="luna-icono" style="width:26px;height:26px;margin:0 auto;display:block;"></span>
+        <h3>Calendario</h3>
+        <p>Ver tus fases del mes</p>
+      </a>
+
+      <a class="accion-card" href="chat.html">
+        <span class="luna-icono" style="width:26px;height:26px;margin:0 auto;display:block;"></span>
+        <h3>Asistente</h3>
+        <p>Pregúntale a Luna</p>
+      </a>
+
+      <a class="accion-card" href="registro-diario.html">
+        <span class="luna-icono" style="width:26px;height:26px;margin:0 auto;display:block;"></span>
+        <h3>Registro diario</h3>
+        <p>Anota cómo te sientes</p>
+      </a>
+
+      <a class="accion-card" href="perfil.html">
+        <span class="luna-icono" style="width:26px;height:26px;margin:0 auto;display:block;"></span>
+        <h3>Mi perfil</h3>
+        <p>Datos y preferencias</p>
+      </a>
+    </div>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="home.html" class="activo">
+      <span class="icono"></span>
+      Inicio
+    </a>
+    <a href="calendario.html">
+      <span class="icono"></span>
+      Calendario
+    </a>
+    <a href="chat.html">
+      <span class="icono"></span>
+      Asistente
+    </a>
+    <a href="perfil.html">
+      <span class="icono"></span>
+      Perfil
+    </a>
+  </nav>
+
+</body>
+</html>
